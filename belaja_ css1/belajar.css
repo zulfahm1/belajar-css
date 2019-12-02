@@ -1,0 +1,37 @@
+<html>
+<head>
+<style>
+.nav {
+  background-color: #dcdcdc; 
+  list-style-type: none;
+  text-align: center;
+  margin: 5;
+  padding: 8;
+  border-radius: 5px;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h1>zoel fahmi syam</h1>
+
+
+<ul class="nav">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">services</a></li>
+  <li><a href="#">portfolio</a></li>  
+  <li><a href="#">showcase</a></li>
+  <li><a href="#">our Blog</a></li>
+  <li><a href="#">about us</a></li>
+  <li><a href="#">contact</a></li>
+  <li><a href="#">By premiumpixels.com</a></li>
+</ul>
+
+</body>
+</html>

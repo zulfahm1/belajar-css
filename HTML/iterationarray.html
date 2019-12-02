@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>tugas fahmi</h1>
+<p id="demo"></p>
+<p id="demo1"></p>
+ <p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<p id="demo9"></p>
+<p id="demo10"></p>
+<script>
+//arrayforeach
+var txt = "";
+var numbers = [50, 53,19, 6, 2];
+numbers.forEach(myFunction);
+document.getElementById("demo").innerHTML = txt;
+
+function myFunction(value, index, array) {
+  txt = txt + value + "<br>"; 
+}
+//arraymaap
+var txt = "";
+var numbers = [45, 4, 9, 16, 25];
+numbers.forEach(myFunction);
+document.getElementById("demo1").innerHTML = txt;
+
+function myFunction(value, index, array) {
+  txt = txt + value + "<br>"; 
+}
+//array filter
+var numbers = [10, 39, 42,28, 32];
+var over19 = numbers.filter(kursi);
+
+document.getElementById("demo2").innerHTML = over19;
+
+function kursi (value) {
+  return value > 19;
+}
+
+//aarayreduce
+var numbers = [31,8, 85];
+var nilai = numbers.reduce(meja, 19);
+
+document.getElementById("demo3").innerHTML = "totalnya adalah " + nilai;
+
+function meja(total, value) {
+  return total + value;
+}
+
+//arrayreduceright
+
+var numbers = [43, 8, 9, 25];
+var jumlah = numbers.reduceRight(cicak);
+
+document.getElementById("demo4").innerHTML = "nilai " + jumlah;
+
+function cicak(total, value) {
+  return total + value;
+}
+
+//arrayeery
+var numbers = [45, 4, 9, 16, 25];
+var allOver18 = numbers.every(mobil);
+
+document.getElementById("demo5").innerHTML = "jumlah keseluruhan 18 " + allOver18;
+
+function mobil(value, index, array) {
+  return value > 18;
+}
+//arraysome
+
+var numbers = [45, 4, 9, 16, 25];
+var someOver21 = numbers.some(motor);
+
+document.getElementById("demo6").innerHTML = "TOTAL 21 " + someOver21;
+
+function motor(value, index, array) {
+  return value > 21;
+}
+//arrayindex
+var nama = ["zul", "fahmi", "alief", "syabany"];
+var a = nama.indexOf("alief");
+document.getElementById("demo7").innerHTML = "fahmi telah di temukan " + a;
+
+//lastindex
+
+var warna = ["orens", "hitam", "black"];
+var a = warna.lastIndexOf("black");
+document.getElementById("demo8").innerHTML = "POSISI hitam " + (a + 1);
+
+//arrayfind
+
+var numbers = [ 34, 29];
+var first = numbers.find(kabel);
+
+document.getElementById("demo9").innerHTML = "hahahahah 11 is " + first;
+
+function kabel(value, index, array) {
+  return value > 11;
+}
+//arrayfindindex
+var numbers = [4, 9, 16, 25, 29];
+var first = numbers.findIndex(pesawat);
+
+document.getElementById("demo10").innerHTML = "hohoho 13 " + first;
+
+function pesawat(value, index, array) {
+  return value > 13	;
+}
+</script>
+
+
+</script>
+
+</body>
+</html>
+
